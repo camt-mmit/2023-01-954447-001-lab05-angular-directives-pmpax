@@ -1,0 +1,22 @@
+a
+ {
+  color: blue;
+  text-decoration: none;
+  border: 2px solid blue;
+  border-radius: 410px;
+  padding: 5px 9px;
+  margin-inline: 10px;
+
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 4px;
+  }
+a.st-active {
+  background-color: silver;
+  }
+
+header{
+  text-align: center;
+}
+
