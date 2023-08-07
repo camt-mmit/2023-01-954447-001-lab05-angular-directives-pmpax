@@ -1,0 +1,20 @@
+<h2>Try Three</h2>
+
+<button type="button" (click)="add()"> Add </button>
+<br/>
+
+<div class=>
+    <div *ngFor="let item of items; let i = index">
+<label>
+    <span>
+<input #elem type="number" 
+[value]="item.value" 
+(change)="onChange(i, elem.valueAsNumber)"/>
+    </span>
+    <button type="button" (click)="delete(i)"> Delete </button>
+</label>
+</div>
+</div>
+
+<p>Result: {{ getResult() }}</p>
+

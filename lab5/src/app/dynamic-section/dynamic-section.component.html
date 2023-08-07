@@ -1,0 +1,53 @@
+<html>
+
+<div class="background">
+
+<head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet" href="./dynamic-section.component.scss" />
+</head>
+<h2>Dynamic-Section</h2>
+<body>
+  
+  <div class="center">
+<button type="button" (click)="addSection()">
+  <span class="material-symbols-outlined">library_add</span> Add Section
+</button>
+<div *ngFor="let section of sections; let sectionIndex = index">
+
+  <button type="button" (click)="deleteSection(sectionIndex)" ><span class="material-symbols-outlined">
+    delete
+    </span>Delete Section</button>
+
+  <h3>Section {{ sectionIndex + 1 }} </h3>
+  <div>
+
+    <button type="button" (click)="add(sectionIndex)"><span class="material-symbols-outlined">
+      add_box 
+    </span></button>
+
+
+    <div *ngFor="let item of section.items; let i = index" class="item">
+      <label>
+        <div class="input-wrapper">
+        <span>
+          <input 
+          #elem type="number" 
+          [value]="item.value" 
+          (input)="onChange(sectionIndex, i, elem.valueAsNumber)" />
+          </span>
+          <button type="button" (click)="delete(sectionIndex, i)">
+            <span class="material-symbols-outlined">backspace</span></button>
+          </div>
+      </label>
+    </div>
+    </div>
+    <h4>Result: {{ getResult(section.items) }}</h4>
+    
+  </div>
+</div>
+</body>
+</div>
+</html>
+
+

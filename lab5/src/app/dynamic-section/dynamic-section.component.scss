@@ -1,0 +1,99 @@
+.background{
+    background-color: #b9b5a2;
+    margin: 0%;
+    padding: 0%;
+}
+
+:root {
+    --app-font: sans-serif;
+    --app-font-size: 16px;
+    --app-font-mono: monospace;
+    --app-icon-fill: 0;
+    --app-primary-color: #00acf0;
+    --app-warn-color: rgb(255, 166, 0);
+    font-family: var(--app-font);
+    font-size: var(--app-font-size);
+    background-color: #b9b5a2;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+
+h2 {
+    color: rgb(77, 47, 25);
+    text-align: center;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    padding: 10px 12px;
+    margin: 10px;
+    font-size: 16px;
+    background-color: #b9b5a2;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+
+label {
+    margin-right: 10px;
+}
+
+input {
+    width: 95%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+h3 {
+    margin: 5px 0;
+    text-align: center;
+    color:#ccc
+}
+
+h4 {
+    margin: 5px 0;
+    text-align: center;
+    color:#ccc
+}
+
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined', sans-serif;
+    font-size: 18px;
+    margin-right: 5px;
+  }
+
+.center {
+    margin: auto;
+    width: 70%;
+    background-color: rgb(114, 146, 250);
+    padding: 10px;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the input horizontally */
+    width: 100%;
+    height: 40px;
+
+    border-radius: 4px;
+  }
+
+  .input-wrapper input {
+    width: 500px;
+    height: 100%;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    text-align: center;
+  }
+
+
